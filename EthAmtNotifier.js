@@ -15,7 +15,7 @@ class EthAmtNotifier {
     this.web3 = new Web3(
       new Web3.providers.HttpProvider(process.env.HTTPS_URL + projectId)
     );
-    this.accounts = accounts.split(", ");
+    this.accounts = accounts.split(", "); //Need to replace this with a secure vault like AWS secrets
   }
 
   /** Subscribes to an event(topic) in Ethereum */
